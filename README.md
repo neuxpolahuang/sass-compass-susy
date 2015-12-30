@@ -4,6 +4,21 @@ Sass是以程式語言的方式撰寫Css。http://sass-lang.com/ <br>
 Compass是強大的Sass編譯工具。http://compass-style.org/ <br>
 Susy Power tools for the web。http://susy.oddbird.net/ <br>
 
+# 安裝Sass
+    1. 打開終端機, 先更新gem
+       gem update --system
+    2. 安裝Compass
+       gem install compass
+       (mac要加sudo)
+       sudo gem install compass
+    3. 確認安裝好的版本
+       compass -v
+
+安裝Compass
+
+安裝Susy
+
+用Compass建立新專案
 
     ------------------------------------------------------------------------------------
     require 'compass/import-once/activate'

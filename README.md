@@ -20,36 +20,43 @@ Susy Power tools for the web。http://susy.oddbird.net/ <br>
        Susy -v
 
 # 用Compass建立新專案
-
-    ------------------------------------------------------------------------------------
-    require 'compass/import-once/activate'
-    # Require any additional compass plugins here.
-    Encoding.default_external = 'utf-8'
-    # Set this to the root of your project when deployed:
-    http_path = "/"                   # 你的根目錄位置
-    css_dir = "css"                   # 你的CSS資料夾路徑
-    sass_dir = "sass"                 # 你的Sass資料夾路徑
-    images_dir = "img"                # 你的圖片資料夾路徑
-    javascripts_dir = "js"            # 你的js資料夾路徑
-    
-    # You can select your preferred output style here (can be overridden via the command line):
-    # output_style = :expanded or :nested or :compact or :compressed
-    # output_style意思則是指你的編譯出來的CSS碼要用哪種方式編譯出來。
-    # expanded   = 一般，每行CSS皆會斷行
-    # nested     = 有縮進，較好閱讀
-    # compact    = 簡潔格式，匯出來的ＣＳＳ檔案大小比上面兩個還小。
-    # compressed = 壓縮過的CSS，所有設定都以一行來進行排列。
-    
-    # To enable relative paths to assets via compass helper functions. Uncomment:
-    relative_assets = true
-    
-    # To disable debugging comments that display the original location of your selectors. Uncomment:
-    # 如果你不希望你的CSS碼有註解的話，請將line_comments = false前面的#拿掉，功能便會生效。
-    line_comments = false
-    
-    # If you prefer the indented syntax, you might want to regenerate this
-    # project again passing --syntax sass, or you can uncomment this:
-    # preferred_syntax = :sass
-    # and then run:
-    # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
-    ------------------------------------------------------------------------------------
+    1. 打開終端機, 先到您要建立專案的路徑, Compass create "專案名稱"
+       Compass create test
+    2. Compass會給您一個預設的專案, 您可以依需求更改其中config設定
+    3. config設定說明
+        ------------------------------------------------------------------------------------
+        require 'compass/import-once/activate'
+        # Require any additional compass plugins here.
+        Encoding.default_external = 'utf-8'
+        # Set this to the root of your project when deployed:
+        http_path = "/"                   # 你的根目錄位置
+        css_dir = "css"                   # 你的CSS資料夾路徑
+        sass_dir = "sass"                 # 你的Sass資料夾路徑
+        images_dir = "img"                # 你的圖片資料夾路徑
+        javascripts_dir = "js"            # 你的js資料夾路徑
+        
+        # You can select your preferred output style here (can be overridden via the command line):
+        # output_style = :expanded or :nested or :compact or :compressed
+        # output_style意思則是指你的編譯出來的CSS碼要用哪種方式編譯出來。
+        # expanded   = 一般，每行CSS皆會斷行
+        # nested     = 有縮進，較好閱讀
+        # compact    = 簡潔格式，匯出來的ＣＳＳ檔案大小比上面兩個還小。
+        # compressed = 壓縮過的CSS，所有設定都以一行來進行排列。
+        
+        # To enable relative paths to assets via compass helper functions. Uncomment:
+        relative_assets = true
+        
+        # To disable debugging comments that display the original location of your selectors. Uncomment:
+        # 如果你不希望你的CSS碼有註解的話，請將line_comments = false前面的#拿掉，功能便會生效。
+        line_comments = false
+        
+        # If you prefer the indented syntax, you might want to regenerate this
+        # project again passing --syntax sass, or you can uncomment this:
+        # preferred_syntax = :sass
+        # and then run:
+        # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+        ------------------------------------------------------------------------------------
+    4. compass監聽, 使您撰寫好的sass檔案被編譯為css
+       compass watch
+    5. 取消監聽
+       control + c
